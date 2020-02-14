@@ -1,0 +1,9 @@
+.head{
+    grid-area: head;
+    background-color: #f18973;
+    text-align:center;
+    }
+
+    .loginBlock{
+        text-align: right
+    }

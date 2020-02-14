@@ -1,0 +1,16 @@
+.usersPage{
+    background-color: blue;
+    color: bisque;
+}
+.user{
+
+}
+.user img{
+    width: 100px;
+    height: 100px;
+    clip-path: circle(50%);
+}
+
+.active{
+    font-weight: bold;
+}
