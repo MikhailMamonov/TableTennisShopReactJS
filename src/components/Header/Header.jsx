@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom'
 
 
 const Header = (props) => {
-  debugger;
   return (
     <header className={classes.head}>
     <h1>Клуб настольного тенниса "Dream team"</h1>

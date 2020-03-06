@@ -4,7 +4,7 @@ class UsersAPIComponent extends React.Component {
 
 
     componentDidMount() {
-        this.props.getUsers(this.props.pageSize, 1)
+        //this.props.getUsers(this.props.pageSize, 1)
     }
 
 

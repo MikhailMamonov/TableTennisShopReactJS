@@ -1,0 +1,11 @@
+.ProductsContainer {
+    background: #d8f3b4;
+    display: grid;
+    width: 1000px;
+    height: 600px;
+}
+
+.headerProduct {
+    text-align: center;
+    background-color: aqua
+}

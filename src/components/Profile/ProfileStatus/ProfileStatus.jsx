@@ -24,13 +24,13 @@ class ProfileStatus extends React.Component {
                 editMode: false
             }
         )
-        debugger;
+        
         this.props.updateStatus(e.target.value)
 
     }
 
     changeStatusHandler=(e)=>{
-        debugger;
+        
         let text = e.target.value;
         this.setState(
             {
@@ -40,7 +40,7 @@ class ProfileStatus extends React.Component {
     }
 
     render() {
-        debugger;
+        
         return (
             <div>
                 {this.state.editMode === false &&

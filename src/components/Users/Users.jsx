@@ -5,7 +5,13 @@ import { NavLink } from 'react-router-dom';
 
 const Users = (props) => {
 
-    let pagesCount = props.totalCount / props.pageSize;
+    let pagesCount = 2;
+    let currentPage = 1;
+    let users =   [
+        {id : 1, name : "Mikki", followed : true, image : "https://scrumandkanban.co.uk/wp-content/uploads/2013/07/DavidLowe.jpg"},
+        {id : 2, name : "Nikki", followed: true, image : "https://scrumandkanban.co.uk/wp-content/uploads/2013/07/DavidLowe.jpg"},
+        {id : 3, name : "Pikki", followed : true, image : "https://scrumandkanban.co.uk/wp-content/uploads/2013/07/DavidLowe.jpg"},];
+
     let pages = []
     for (let i = 1; i <= pagesCount; i++) {
         pages.push(i);
@@ -15,21 +21,19 @@ const Users = (props) => {
         <div>Users Page</div>
         {
             pages.map(page => {
-                return <span className={props.currentPage === page ? classes.active : ""}
+                return <span className={currentPage === page ? classes.active : ""}
                     onClick={() => props.onChangeCurrentPage({ page })}>{page}</span>
             })
         }
 
-        {props.users.map(u => {
+        {users.map(u => {
             return <div className={classes.user}>
-                <div>{u.name}
-                </div>
+                <div>{u.name}</div>
                 <NavLink to={"/profile/" + u.id} activeClassName={classes.active}>
-                    <img src={u.photos.small != null ? u.photos.small :
-                        "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png"} />
+                    <img src = "https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png" alt=""/>>
                 </NavLink>
                 {u.followed ?
-                    <button disabled={props.followingInProgress.some(user => user==u.id)} onClick={() => {
+                    <button disabled={false} onClick={() => {
                         props.onClickUnfollow(u.id)    
                     }}> Unfollow </button> :
                     <button disabled={props.followingInProgress.some(user => user===u.id)} onClick={() => {

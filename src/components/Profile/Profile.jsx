@@ -8,7 +8,7 @@ import ProfileContainer from "./ProfileContainer";
 
 
 const Profile = (props) => {
-  debugger;
+  
   return (<div className={classes.main}>
     <ProfileInfo  aboutMe={props.profileInfo.aboutMe} 
     fullName={props.profileInfo.fullName}

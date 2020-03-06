@@ -6,7 +6,7 @@ import ProfileStatus from "./ProfileStatus/ProfileStatus";
 const ProfileInfo = (props) => {
 
 
-    debugger;
+    
     return (
         <div className={classes.main}>
             <img src='https://www.aussiespecialist.com/content/asp/en/sales-resources/image-and-video-galleries/_jcr_content/mainParsys/hero/image.adapt.1663.medium.jpg' />
