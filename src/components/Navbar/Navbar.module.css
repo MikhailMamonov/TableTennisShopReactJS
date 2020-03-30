@@ -10,7 +10,10 @@
     color: #818181;
 
   }
-
+.item{
+  border-style: ridge;
+  border-color: khaki;
+}
   /* When you mouse over the navigation links, change their color */
   .item a.active{
   text-decoration: none;

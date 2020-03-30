@@ -1,0 +1,7 @@
+//PRODUCTS
+export const ADD_PRODUCT = "ADD_PRODUCT";
+export const SET_CATEGORY = "SET_CATEGORY";
+
+//RATINGS
+export const SET_RATING = "SET_RATING";
+export const GET_CURRENT_RATING = "GET_CURRENT_RATING";

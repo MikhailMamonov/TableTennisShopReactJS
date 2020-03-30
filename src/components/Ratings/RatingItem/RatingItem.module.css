@@ -1,0 +1,54 @@
+.ratingContent{
+    margin-top: 0;
+}
+.ratingItem{
+    background-color: greenyellow;
+}
+
+.ratingContent img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.ratingTable{
+    display: grid;
+    grid-template-columns: repeat(14,auto);
+    grid-template-rows: 50px auto ;
+    border: 1px solid black;
+
+    grid-template-areas: 
+            "empty header"
+            "content values";
+}
+
+.ratingTable .header {
+    grid-area : header;
+    border: 1px solid black;
+}
+
+.ratingTable .content {
+    grid-area : content;
+    border: 1px solid black;
+}
+
+.ratingTable .content > span {
+    display: block;
+    border: 1px solid black;
+}
+
+.ratingTable .empty {
+    grid-area : empty;
+    border: 1px solid black;
+}
+
+.ratingTable .values {
+    grid-area : values;
+    border: 1px solid black;
+}
+
+.ratingTable .header  > span {
+    padding: 8px 4px;
+    border: 1px solid black;
+    
+}
