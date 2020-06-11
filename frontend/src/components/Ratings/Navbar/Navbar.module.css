@@ -1,0 +1,34 @@
+.ratings__Nav {
+    background-color: yellow;
+    color: #444;
+    margin-left: -1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.nul {
+    margin: 0;
+    /* Обнуляем значение отступов */
+    padding: 4px;
+    display: contents;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nli {
+    display: inline-block;
+    /* Отображать как строчный элемент */
+    margin-right: 5px;
+    /* Отступ слева */
+    border: 1px solid #000;
+    /* Рамка вокруг текста */
+    padding: 3px;
+    /* Поля вокруг текста */
+    flex-basis: 20%;
+    height: 248px;
+    width: max-content;
+    align-content: center;
+}

@@ -1,0 +1,95 @@
+/* .app-wrapper {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 1000px;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: "head head" "nav main" "foot foot"
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-areas: "header header header" "nav content side" "footer footer footer";
+    grid-template-columns: 240px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    grid-area: header;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    display: inline-block;
+    top: 0;
+    align-items: center;
+}
+
+.main__nav {
+    top: 0;
+    grid-area: nav;
+    display: grid;
+}
+
+main {
+    grid-area: content;
+    background-color: #FDF4E3;
+    overflow-x: hidden;
+}
+
+aside {
+    grid-area: side;
+    margin-right: 0.5rem;
+}
+
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* background-color: #1FE37D; */
+    background: url(https://i.pinimg.com/originals/e3/1d/19/e31d19366d2c400560de49f26e7e7438.jpg) 100% 100% no-repeat;
+    /* Добавляем фон */
+    /* Full height */
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax__layer {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax__layer__base {
+    transform: translateZ(0);
+}
+
+.parallax__layer__back {
+    transform: translateZ(-1px);
+}

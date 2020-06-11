@@ -1,0 +1,21 @@
+# POST http://localhost:32/products HTTP/1.1
+# content-type: application/json
+
+# {
+#     "category": "1",
+#     "label": "hbjhbjhbj",
+#     "image": "jbhjbjhbjh"
+# }
+
+GET  http://localhost:32/products HTTP/1.1
+
+
+# DELETE http://localhost:32/products/5e96d8a1dddef24ac05b131a HTTP/1.1
+
+# PUT  http://localhost:32/products/5e96e73564aab72cac5599c3 HTTP/1.1
+# content-type: application/json
+
+# {
+#     "category": "2",
+#     "label": "KongLinghui"
+# }
